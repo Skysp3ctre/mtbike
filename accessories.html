@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META DATA -->
+    <title>MT Bike</title>
+    <meta charset="UTF=8" />
+
+    <!-- LINK CSS -->
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/breakpoint.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <!-- This is a nav bar -->
+  <body>
+    <header>
+      <div>
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo" class="logo" width="80px" />
+        </a>
+      </div>
+      <nav class="navbar">
+        <div class="nav-container">
+          <ul class="nav-links">
+            <li class="dropdown">
+              <a href="bicycle.html">Bicycle</a>
+              <div class="dropdown-content">
+                <a href="mount-bike.html">Mountain Bikes</a>
+                <a href="road-bike.html">Road Bikes</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="accessories.html">Accessories</a>
+              <div class="dropdown-content">
+                <a href="helmet.html">Helmets</a>
+                <a href="shoes.html">Shoes</a>
+              </div>
+            </li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- This is a search bar -->
+          <div class="search-bar">
+            <input type="text" placeholder="Search" />
+            <button type="submit">Search</button>
+          </div>
+
+          <!-- Hamburger Menu Icon -->
+          <!-- Add an ID to the hamburger menu icon -->
+          <div class="hamburger-menu" id="hamburger-menu">
+            <img src="img/ham-menu.png" alt="Menu" width="25px" />
+          </div>
+
+          <div class="close-button">
+            <img src="img/x.png" alt="Close Menu" width="25px" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="helmet-wall">
+      <img src="helmet/wallpaper.jpeg" alt="wallpaper" width="900px" />
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- Grid items for bicycles -->
+    <div class="grid-container">
+      <!-- Item 1 -->
+      <div class="bike-item">
+        <h4>BONTRAGER SOLSTICE ASIA FIT BIKE HELMET</h4>
+        <p>1,390 ฿</p>
+        <img
+          src="helmet/solstice.jpeg"
+          alt="helmet-solstice"
+          width="300px"
+          id="helmet1"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(198, 198, 198)"
+            onclick="changeColor('helmet/solstice.jpeg', 'helmet1')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: black"
+            onclick="changeColor('helmet/solstice-bl.jpeg', 'helmet1')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(238, 238, 238)"
+            onclick="changeColor('helmet/solstice-wh.jpeg', 'helmet1')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(194, 0, 0)"
+            onclick="changeColor('helmet/solstice-red.jpeg', 'helmet1')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bike-item">
+        <h4>TREK VELOCIS MIPS ROAD BIKE HELMET</h4>
+        <p>8,900 ฿</p>
+        <img
+          src="helmet/velocis-red.jpeg"
+          alt="helmet-xxx"
+          width="300px"
+          id="helmet2"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(255, 0, 0)"
+            onclick="changeColor('helmet/velocis-red.jpeg', 'helmet2')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(228, 228, 228)"
+            onclick="changeColor('helmet/velocis-wh.jpeg', 'helmet2')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 0, 0)"
+            onclick="changeColor('helmet/velocis-bl.jpeg', 'helmet2')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bike-item">
+        <h4>TREK BALLISTA MIPS ASIA FIT ROAD BIKE HELMET</h4>
+        <p>7,900 ฿</p>
+        <img
+          src="helmet/ballista-wh.jpeg"
+          alt="helmet-ball"
+          width="300px"
+          id="helmet3"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(239, 239, 239)"
+            onclick="changeColor('helmet/ballista-wh.jpeg', 'helmet3')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(255, 0, 0)"
+            onclick="changeColor('helmet/ballista-red.jpeg', 'helmet3')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(234, 234, 234)"
+            onclick="changeColor('helmet/ballista-allwh.jpeg', 'helmet3')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 0, 0)"
+            onclick="changeColor('helmet/ballista-bl.jpeg', 'helmet3')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+      <!-- Item 4 -->
+      <div class="bike-item">
+        <h4>SH-RC502</h4>
+        <p>4,700 ฿</p>
+        <img src="shoes/RC502blu.jpeg" alt="roc502" width="300px" id="shoes1" />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 80, 193)"
+            onclick="changeColor('shoes/RC502blu.jpeg', 'shoes1')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: black"
+            onclick="changeColor('shoes/RC502bl.jpeg', 'shoes1')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(238, 238, 238)"
+            onclick="changeColor('shoes/RC502wh.jpeg', 'shoes1')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bike-item">
+        <h4>SH-XC300</h4>
+        <p>3,400 ฿</p>
+        <img src="shoes/XC300-bl.jpeg" alt="xc300" width="300px" id="shoes2" />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 0, 0)"
+            onclick="changeColor('shoes/XC300-bl.jpeg', 'shoes2')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 63, 165)"
+            onclick="changeColor('shoes/XC300-blu.jpeg', 'shoes2')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bike-item">
+        <h4>SH-XC500</h4>
+        <p>4,800 ฿</p>
+        <img src="shoes/xc502-blu.jpeg" alt="xc502" width="300px" id="shoes3" />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 63, 165)"
+            onclick="changeColor('shoes/xc502-blu.jpeg', 'shoes3')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 0, 0)"
+            onclick="changeColor('shoes/XC300-bl.jpeg', 'shoes3')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+      <!-- Add more items here -->
+    </div>
+
+    <br />
+    <!-- End of grid container for bicycles -->
+
+    <footer>
+      <br />
+      <br />
+
+      <!-- *This is our map. -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3849.618845911157!2d104.86779351059081!3d15.234011185269805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311687b540d093cf%3A0x878c6a656bd0fb99!2sMT%20Bike!5e0!3m2!1sen!2sca!4v1709683617492!5m2!1sen!2sca"
+        width="100"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <!-- *This is closed time. -->
+      <div class="footer-text">
+        <h2>Open hours:</h2>
+        <p>Mon - Sat: 10:00 a.m - 06:00 p.m</p>
+        <p>Sun - Closed</p>
+      </div>
+
+      <!-- *This is our social media. -->
+      <div class="social-text">
+        <h2>Follow:</h2>
+        <a href="https://www.facebook.com/Mtbikeubon/photos_by">
+          <img src="img/facebook.png" alt="facebook" width="30px" />
+        </a>
+        <a href="#">
+          <img src="img/tel.png" alt="tele" width="30px" />
+        </a>
+      </div>
+      <br />
+      <br />
+    </footer>
+    <!-- *End of the footer section. -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./java/script.js"></script>
+  </body>
+</html>

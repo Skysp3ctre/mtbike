@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META DATA -->
+    <title>MT Bike</title>
+    <meta charset="UTF=8" />
+
+    <!-- LINK CSS -->
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/breakpoint.css" rel="stylesheet" type="text/css" />
+
+    <!-- Viewport Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <!-- This is a nav bar -->
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="img/logo.png" alt="logo" class="logo" width="80px" />
+      </a>
+    </div>
+    <nav class="navbar">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a href="bicycle.html">Bicycle</a>
+            <div class="dropdown-content">
+              <a href="mount-bike.html">Mountain Bikes</a>
+              <a href="road-bike.html">Road Bikes</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="accessories.html">Accessories</a>
+            <div class="dropdown-content">
+              <a href="helmet.html">Helmets</a>
+              <a href="shoes.html">Shoes</a>
+            </div>
+          </li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- This is a search bar -->
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button type="submit">Search</button>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <!-- Add an ID to the hamburger menu icon -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <img src="img/ham-menu.png" alt="Menu" width="25px" />
+        </div>
+
+        <div class="close-button">
+          <img src="img/x.png" alt="Close Menu" width="25px" />
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="bike-wall">
+      <img src="item/bike-wallpaper.jpg" alt="wallpaper" width="900px" />
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- Grid items for bicycles -->
+    <div class="grid-container">
+      <!-- Item 1 -->
+      <div class="bike-item">
+        <h4>X-caliber 8</h4>
+        <p>39,000 ฿</p>
+        <img
+          src="item/xcablue.jpeg"
+          alt="Mountain Bike"
+          width="300px"
+          id="bike1"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 7, 216)"
+            onclick="changeColor('item/xcablue.jpeg', 'bike1')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: black"
+            onclick="changeColor('item/xcablack.jpeg', 'bike1')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bike-item">
+        <h4>MADONE SLR 6 GEN 7</h4>
+        <p>288,000 ฿</p>
+        <img
+          src="item/madonered.jpeg"
+          alt="Road Bike"
+          width="300px"
+          id="bike2"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: red"
+            onclick="changeColor('item/madonered.jpeg', 'bike2')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: black"
+            onclick="changeColor('item/madoneblack.jpeg', 'bike2')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: grey"
+            onclick="changeColor('item/madonegrey.jpeg', 'bike2')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 149, 255)"
+            onclick="changeColor('item/madoneblue.jpeg', 'bike2')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bike-item">
+        <h4>Marlin 7</h4>
+        <p>25,000 ฿</p>
+        <img
+          src="item/marlin7g.jpeg"
+          alt="Cruiser Bike"
+          width="300px"
+          id="bike3"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 243, 219)"
+            onclick="changeColor('item/marlin7g.jpeg', 'bike3')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(255, 119, 0)"
+            onclick="changeColor('item/marlin7red.jpeg', 'bike3')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(3, 0, 90)"
+            onclick="changeColor('item/marlin7blue.jpeg', 'bike3')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="bike-item">
+        <h4>FUEL EX 5 GEN 5</h4>
+        <p>99,000 ฿</p>
+        <img
+          src="item/fuel5y.jpeg"
+          alt="Cruiser Bike"
+          width="300px"
+          id="bike4"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(255, 187, 0)"
+            onclick="changeColor('item/fuel5y.jpeg', 'bike4')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 0, 0)"
+            onclick="changeColor('item/fuel5black.jpeg', 'bike4')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="bike-item">
+        <h4>FX 2 DISC</h4>
+        <p>21,000 ฿</p>
+        <img src="item/fx2b.jpeg" alt="Cruiser Bike" width="300px" id="bike5" />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(52, 52, 52)"
+            onclick="changeColor('item/fx2b.jpeg' , 'bike5')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(173, 173, 173)"
+            onclick="changeColor('item/fx2grey.jpeg' , 'bike5')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="bike-item">
+        <h4>MADONE SLR 7 GEN 7 PROJECT ONE PASTEL TIE DYE</h4>
+        <p>400,000 ฿</p>
+        <img src="item/project1.jpeg" alt="Cruiser Bike" width="300px" />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(212, 255, 254)"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="bike-item">
+        <h4>Marlin 4</h4>
+        <p>19,900 ฿</p>
+        <img
+          src="item/marlin5blue.jpeg"
+          alt="Cruiser Bike"
+          width="300px"
+          id="bike7"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(146, 197, 255)"
+            onclick="changeColor('item/marlin5blue.jpeg' , 'bike7')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(40, 40, 40)"
+            onclick="changeColor('item/marlin5bl.jpeg' , 'bike7')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(255, 45, 45)"
+            onclick="changeColor('item/marlin5red.jpeg' , 'bike7')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(255, 252, 59)"
+            onclick="changeColor('item/marlin5green.jpeg' , 'bike7')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="bike-item">
+        <h4>Marlin 6 Gen 3</h4>
+        <p>23,500 ฿</p>
+        <img
+          src="item/marlin6lightblue.jpeg"
+          alt="Cruiser Bike"
+          width="300px"
+          id="bike8"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 172, 140)"
+            onclick="changeColor('item/marlin6lightblue.jpeg' , 'bike8')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(71, 71, 71)"
+            onclick="changeColor('item/marlin6bl.jpeg' , 'bike8')"
+          ></div>
+          <div
+            class="color-option"
+            style="background-color: rgb(27, 11, 255)"
+            onclick="changeColor('item/marlin6darkblue.jpeg', 'bike8')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+
+      <!-- Item 9 -->
+      <div class="bike-item">
+        <h4>DUAL SPORT 2</h4>
+        <p>20,500 ฿</p>
+        <img
+          src="item/dualsport2.jpeg"
+          alt="Cruiser Bike"
+          width="300px"
+          id="bike8"
+        />
+        <div class="color-selector">
+          <div
+            class="color-option"
+            style="background-color: rgb(0, 14, 29)"
+            onclick="changeColor('item/dualsport2.jpeg' , 'bike')"
+          ></div>
+        </div>
+        <button class="custom-buy">BUY</button>
+      </div>
+      <!-- Add more items here -->
+    </div>
+    <!-- End of grid container for bicycles -->
+
+    <br /><br />
+    <footer>
+      <br />
+      <br />
+
+      <!-- *This is our map. -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3849.618845911157!2d104.86779351059081!3d15.234011185269805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311687b540d093cf%3A0x878c6a656bd0fb99!2sMT%20Bike!5e0!3m2!1sen!2sca!4v1709683617492!5m2!1sen!2sca"
+        width="100"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <!-- *This is closed time. -->
+      <div class="footer-text">
+        <h2>Open hours:</h2>
+        <p>Mon - Sat: 10:00 a.m - 06:00 p.m</p>
+        <p>Sun - Closed</p>
+      </div>
+
+      <!-- *This is our social media. -->
+      <div class="social-text">
+        <h2>Follow:</h2>
+        <a href="https://www.facebook.com/Mtbikeubon/photos_by">
+          <img src="img/facebook.png" alt="facebook" width="30px" />
+        </a>
+        <a href="#">
+          <img src="img/tel.png" alt="tele" width="30px" />
+        </a>
+      </div>
+      <br /><br />
+    </footer>
+    <!-- *End of the footer section. -->
+
+    <!-- Script should be placed at the end of the body tag for better performance -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./java/script.js"></script>
+  </body>
+</html>

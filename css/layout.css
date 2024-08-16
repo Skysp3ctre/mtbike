@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* Above is to import font from google fonts */
+
+html {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #7c0202;
+  position: fixed;
+  z-index: 999; /* This helps the nav bar stay infront of everything*/
+}
+
+/* Below is to design the navigation bar */
+
+/* hide hamburger menu */
+.hamburger-menu {
+  display: none;
+}
+
+/* x-button to close */
+.close-button {
+  display: none;
+}
+
+.logo {
+  margin: 5px 0 20px 50px;
+  height: 50px;
+  width: auto;
+  display: flex;
+}
+
+/* Navbar styles */
+.navbar {
+  width: 100%;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  margin: 0 6rem;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-container li {
+  flex: 1;
+  padding: 5px 60px;
+}
+
+.nav-container a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 0;
+  text-decoration: none;
+}
+
+.nav-container a:hover {
+  text-decoration: underline;
+}
+
+/* Common container for nav-links and search bar */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Align items to left and right */
+  align-items: center; /* Center items vertically */
+}
+
+/* Search bar styles */
+.search-bar {
+  margin-right: 30px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.search-bar input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button[type="submit"] {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #7b0101;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.search-bar button[type="submit"]:hover {
+  color: white;
+  background-color: #7c0202;
+}
+
+/* Hide dropdown content by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the dropdown menu links */
+.dropdown-content a {
+  background-color: #7c0202;
+  color: rgb(255, 255, 255);
+  paddingrgb(255, 255, 255) 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Logo bar styles */
+.logo-bar {
+  margin-top: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  top: 40px; /* Adjust top value according to your needs */
+  text-align: center; /* Center the logo horizontally */
+}
+
+/* The map */
+footer iframe {
+  width: 60%;
+  height: 200px;
+  margin: auto;
+  padding: 40px 0 40px 0;
+  display: block;
+}
+
+.banners-html {
+  width: 100%;
+  overflow: hidden;
+}
+
+h3 {
+  text-align: center;
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+.review1 {
+  flex: 1; /* Distribute remaining space equally */
+  border: 1px solid #ccc;
+  width: 500px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+#navigation {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* BUY BUTTON */
+
+.buy-button {
+  color: rgb(255, 255, 255);
+  border-radius: 10%; /* This makes the button circular */
+  width: 400px; /* Adjust the width and height as needed */
+  height: 400px;
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from anchor */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+}
+
+.buy-button:hover {
+  background-color: #000000; /* Change color on hover if desired */
+}
+
+.more-butt {
+  background-color: rgb(151, 6, 6);
+  color: rgb(255, 255, 255);
+  border-radius: 10%; /* This makes the button circular */
+  width: 100px; /* Adjust the width and height as needed */
+  height: 70px;
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from anchor */
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.more-butt:hover {
+  background-color: #000000; /* Change color on hover if desired */
+}
+
+.service img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Adjust this as needed */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.custom-buy {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-buy:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.service-section {
+  background-color: rgba(231, 231, 231, 0.404);
+}
+
+.service-section img:hover {
+  background-color: #7c0202;
+}
+
+.service-section {
+  text-align: center; /* Center-align the content horizontally */
+}
+
+.serviceimg {
+  display: inline-block; /* Make the image behave like an inline-block element */
+  vertical-align: middle; /* Vertically align the image in the middle */
+}
+
+form {
+  margin-top: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
